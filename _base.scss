@@ -281,7 +281,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    grid-gap: 20px;
+    row-gap: 20px;
     &__rate {
         display: flex;
         align-items: center;
