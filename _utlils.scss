@@ -1,0 +1,70 @@
+
+// COLORS
+$fontColor: rgb(33, 29, 30);
+$documentBackgroundColor: rgb(233, 230, 225);
+$firstMainColor: rgb(211, 169, 153);
+$secondMainColor: rgb(165, 174, 183);
+
+
+// FONTS
+$fontFamilyOfHeaders: 'Lora', serif;
+$fontFamilyOfDocument: 'Roboto', sans-serif;
+
+// VARIABLES FOR ICONS
+$sizeOfIcons: 22px;
+
+
+// MIXINS
+// Mixin underline
+
+@mixin underline {
+    display: block;
+    margin: 5px auto;
+    content: '';
+    width: 45px;
+    height: 1px;
+    margin-top: 15px;
+    background-color: $fontColor;
+}
+
+// Mixin aligns
+
+@mixin alignCenterByTransform() {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    } 
+
+@mixin alignYByTransform {
+    top: 50%;
+    transform: translate(0, -50%); 
+}
+
+@mixin alignXByTransform {
+    left: 50%;
+    transform: translate(-50%, 0); 
+}
+
+// Mixin section headers
+
+@mixin stylesForSectionHeaders {
+    font-family: $fontFamilyOfHeaders;
+    letter-spacing: 1px;
+    margin: 10px auto 30px auto;
+}
+// mixin buttons 
+
+@mixin buttonStyles {
+    display: block;
+    padding: 8px 0;
+    border: 1px solid $fontColor;
+    background-color: transparent;
+    font-family: $fontFamilyOfHeaders;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+@mixin buttonStylesHover {
+    transform: scale(1.03);
+    color: $firstMainColor;
+}

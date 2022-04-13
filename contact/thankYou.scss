@@ -1,0 +1,34 @@
+@import '../_base.scss';
+@import '../_utlils.scss';
+
+body {
+    background-color: $documentBackgroundColor;
+    font-family: $fontFamilyOfDocument;
+}
+.thank-you {
+    @include stylesForSectionHeaders();
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 10.75vw;
+    margin-top: 100px;
+    &::after {
+        @include underline()
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__button {
+        @include buttonStyles();
+        width: 200px;
+        margin: 0 auto;
+    }
+    &__button:hover {
+        @include buttonStylesHover();
+    }
+}
+
+@media (min-width: 300px) {
+    .thank-you {
+        font-size: 32px;
+    }
+}

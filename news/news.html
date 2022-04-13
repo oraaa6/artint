@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Interior Design, Art Design, ArtInt">
+    <meta name = "author" content="Aleksandra Kida">
+    <title>ArtInt Studio</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9946bf0bff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body class = "body flex-container">
+    <div class="body__message body__message--off">STRONA NIEOBSŁUGIWANA PRZEZ IE. PROSZĘ OTWORZYĆ W INNEJ PRZEGLĄDARCE.<br>PAGE NOT SUPPLIED BY IE. PLEASE OPEN IN ANOTHER BROWSER</div>
+    <header class= "header flex-container__header">
+        <nav class = "navigation header__navigation">
+            <div class = "navigation__container">
+                <div class = "logo navigation__logo">
+                    <a class = "logo__link" href="../index.html"><img src="../images/logo_transparent.png" alt="logo ArtInt" class="logo__image"></a>
+                </div>
+                <div class = "menu navigation__menu">
+                    <i class="menu__hamburger fas fa-bars "></i>
+                    <i class="menu__hamburger fas fa-times menu__hamburger--off"></i>
+                    <ul class = "menu__list">
+                        <li class = "menu__item"><a class = "menu__link" href="../index.html">o nas</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="../offers/offers.html">oferta</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="../realizations/realizations.html">realizacje</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="news.html">aktualności</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="../contact/contact.html">kontakt</li></a>
+                        <li class = "menu__lang">en</li>
+                    </ul>
+                </div>
+                <div class = "navigation-icons navigation__social-media">
+                    <a href="https://www.facebook.com/" target="_blank" class= "navigation-icons__link"><img src="../images/facebook.png" class="navigation-icons__image"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class= "navigation-icons__link"><img src="../images/instagram.png" class="navigation-icons__image"></a>
+                    <a href="../contact/contact.html" class= "navigation-icons__link"><img src="../images/envelopes.png" class="navigation-icons__image"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="slider header__image">
+                <img class = "slider__image" src="../images/news2.jpg" alt="cups">
+                <h1 class = "slider__header">Aktualności</h1>
+        </div>
+    </header>
+    <main class= "main flex-container__main">
+        <section class= "news main__news">
+            <div class="news__form-container">
+                <h3 class="news__header">Nowości ze świata designu</h3>
+                <form class="form">
+                    <label class="searching form__searching">Szukaj
+                        <input class="searching__input" type="search">
+                    </label>
+                </form>
+            </div>
+            <div class="articles news__articles-container">
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article1.jpg" alt="plant" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2022" data-month = "03">16<br><span class = "article__date--smaller">mar 22</span></p>
+                        <h5 class="article__title">Rośliny w pomieszczeniach</h5>
+                    </div>
+                    <p class="article__text">Od dawna wiadomo, że obecność roślin w naszych pomieszczeniach, ożywia otoczenie. Jakie gatunki nadają się do ciemnych, a jakie do jasnych wnętrz? Jakie rośliny nie potrzebują słońca?</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article2.jpg" alt="bathtube" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2022" data-month = "03">11<br><span class = "article__date--smaller">mar 22</span></p>
+                        <h5 class="article__title">Wanna czy prysznic?</h5>
+                    </div>
+                    <p class="article__text">Szybki prysznic, czy relaksująca wanna? Co chętniej wybierają polacy w 2022 roku? Z jakimi kosztami trzeba się liczyć, decydując się na wannę wolnostojącą? </p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article3.jpg" alt="woman with laptop" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2022" data-month = "02">23<br><span class = "article__date--smaller">lut 22</span></p>
+                        <h5 class="article__title">Rozmowa z Anną Mysz</h5>
+                    </div>
+                    <p class="article__text">Rozmowa z Anną Mysz - projektantką wnętrz. Kiedy zdecydować się projekt mieszkania? Z jakimi kosztami trzeba się liczyć? Na te i inne pytania odpowie pani Anna.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article4.jpg" alt="kitchen with living-room" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2022" data-month = "01">02<br><span class = "article__date--smaller">sty 22</span></p>
+                        <h5 class="article__title">Kuchnia z salonem czy osobno?</h5>
+                    </div>
+                    <p class="article__text">Kuchnia z salonem, a może osobno? Obecnie panuje trend łączenia tych pomieszczeń w jedno. Czy decydując się na takie wnętrze, znamy konsekwencje?</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article5.jpg" alt="chart" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2021" data-month = "12">20<br><span class = "article__date--smaller">gru 21</span></p>
+                        <h5 class="article__title">Raport 2021 - ceny mieszkań</h5>
+                    </div>
+                    <p class="article__text">Od kilku lat obserwujemy sukcesywny wzrost cen mieszkań. Czym to jest spowodowane? Kiedy ceny się ustabilizują? Najnowszy Raport 2021 - ceny mieszkań </p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article6.jpg" alt="tablet and laptop" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2021" data-month = "11">27<br><span class = "article__date--smaller">lis 21</span></p>
+                        <h5 class="article__title">Nowinki technologiczne 2021</h5>
+                    </div>
+                    <p class="article__text">Inteligentne rolety, gniazdka na bluetooth czy kamera w lodówce? Które nowinki technologiczne są najchętniej wybierane do inteligetnych domów w 2021?</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article7.jpg" alt="man with laptop" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2021" data-month = "09">14<br><span class = "article__date--smaller">wrz 21</span></p>
+                        <h5 class="article__title">Rozmowa z Marcinem Lampą</h5>
+                    </div>
+                    <p class="article__text">Styl loftowy czy skandynawski? A może ich połączenie? Dlaczego warto oglądać inspiracje? Rozmowa z Marcinem Lampą - architektem wnętrz.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article8.jpg" alt="living-room" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2021" data-month = "08">16<br><span class = "article__date--smaller">sie 21</span></p>
+                        <h5 class="article__title">Jak wizualnie powiekszyć salon</h5>
+                    </div>
+                    <p class="article__text">Mieszkanie w bloku - dla innych wygoda, a dla innych wnętrzarska zmora. Salony w mieszkaniach bardzo często są małe oraz nieustawne. Doradzamy jak wizualnie zwiększyć salon.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article9.jpg" alt="legs with flowers" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2021" data-month = "06">11<br><span class = "article__date--smaller">cze 21</span></p>
+                        <h5 class="article__title">Eko design - wykład J.Murka dla UW</h5>
+                    </div>
+                    <p class="article__text">5 czerwca 2021 odbył się wykład J. Murka dla UW pt. "Eko design". Ukazał on w jak prosty sposób design może pozostać w zgodzie z naturą. Zachęcamy do lektury.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article10.jpg" alt="kitchen" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2021" data-month = "03">01<br><span class = "article__date--smaller">mar 21</span></p>
+                        <h5 class="article__title">Jak zaprojektować kuchnie</h5>
+                    </div>
+                    <p class="article__text">Zaprojektowanie kuchni nie należy do najłatwiejszych rzeczy. Pod uwagę należy wziąć nie tylko kwestie wizualne, ale przede wszystkim funkcjonalne. Podpowiadamy jak właściwie zaprojektować kuchnie.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article11.jpg" alt="floor" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2021" data-month = "01">29<br><span class = "article__date--smaller">sty 21</span></p>
+                        <h5 class="article__title">Panele czy parkiet?</h5>
+                    </div>
+                    <p class="article__text">Podłogi w mieszkaniu to jeden z większych wydatków, a więc warto się zastanowić. Czy cena zawsze idzie w parze z jakością? Czas roztrzygnąć odwieczny spór: panele czy parkiet? </p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article12.jpg" alt="bathroom" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2020" data-month = "12">21<br><span class = "article__date--smaller">gru 20</span></p>
+                        <h5 class="article__title">Armatura do łazienki</h5>
+                    </div>
+                    <p class="article__text">Armatura do łazienki może nas nieraz przytłoczyć - szczególnie mnogością wyboru. Jak wybrać coś, co jest jednocześnie estetyczne i funkcjonalne? Jak dobrać wysokości montażu armatury?</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article13.jpg" alt="fair" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2020" data-month = "09">05<br><span class = "article__date--smaller">wrz 20</span></p>
+                        <h5 class="article__title">Targi architektów wnętrz 2020</h5>
+                    </div>
+                    <p class="article__text">10 września 2020 roku w Warszawie zapraszamy na międzynarodowe targi dla architektów wnętrz. W programie m.in. wystawy, prelekcje, darmowe broszury i porady. Wszystkich zainteresowanych zapraszamy! </p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article14.jpg" alt="tiles" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2020" data-month = "07">07<br><span class = "article__date--smaller">lip 20</span></p>
+                        <h5 class="article__title">Wybór płytek</h5>
+                    </div>
+                    <p class="article__text">Wybór płytek nie należy do prostych decyzji. Jest to bowiem inwestycja na lata. Podpowiadamy czym kierować się wyborze płytek, jak poradzić sobie z mnogością produktów oraz gdzie znaleźć sprawdzonych fachowców.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article15.jpg" alt="lights" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2020" data-month = "03">11<br><span class = "article__date--smaller">mar 20</span></p>
+                        <h5 class="article__title">Oświetlenie w domu</h5>
+                    </div>
+                    <p class="article__text">Niekażdy wie, jak oświetlenie odgrywa ogromną rolę w naszym domu. To ono sprawia, czy pomieszczenie jest uznawane jako przytulne, lub idealne miejsce do pracy.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article16.jpg" alt="wall" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2020" data-month = "01">01<br><span class = "article__date--smaller">sty 20</span></p>
+                        <h5 class="article__title">Jak dobrać kolor ścian?</h5>
+                    </div>
+                    <p class="article__text">Większość ludzi decyduje się na jasny kolor ścian. Jednak nie każdemu wnętrzu pasują delikatne odcienie. Dlaczego warto korzystać z próbników? Jak dobrać ilość potrzebnej farby?</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article17.jpg" alt="accessories" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2019" data-month = "12">18<br><span class = "article__date--smaller">gru 19</span></p>
+                        <h5 class="article__title">Dodatki do wnętrz</h5>
+                    </div>
+                    <p class="article__text">Niektóre dodatki, figurki czy obrazy potrafią całkowicie odmienić nasze wnętrza. Jednak gdy jest ich za dużo, pomieszczenie traci na swoim uroku. Podpowiadamy gdzie jest ta idealna granica między dobrym smakiem, a przesadą.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article18.jpg" alt="loft-style apartment" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2019" data-month = "10">30<br><span class = "article__date--smaller">paź 19</span></p>
+                        <h5 class="article__title">Mieszkanie w stylu loft</h5>
+                    </div>
+                    <p class="article__text">Podpowiadamy jak urządzić mieszkanie w stylu loftowym, gdzie szukać mebli oraz dodatków, oraz na co warto uważać podczas wykańczania mieszkania w takim stylu. Zapraszamy do lektury.</p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article19.jpg" alt="curtains" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2019" data-month = "09">15<br><span class = "article__date--smaller">wrz 19</span></p>
+                        <h5 class="article__title">Zasłony w domu</h5>
+                    </div>
+                    <p class="article__text">Zasłony - hit? A może przeżytek? Coraz więcej ludzi rezygnuje w domu z zasłon na rzecz rolet, jednak czy jest to odpowiedni kierunek? Czy brak zasłon nie sprawi, iż wnętrze stanie się nudne, oraz zimne? </p>
+                    <button class="article__button">Czytaj więcej</button>
+                </article>
+                <article class="article">
+                    <div class="article__image-container">
+                        <img src="../images/article20.jpg" alt="door" class="article__image">
+                    </div>
+                    <div class="article__title-container">
+                        <p class= "article__date" data-year = "2019" data-month = "08">03<br><span class = "article__date--smaller">sie 19</span></p>
+                        <h5 class="article__title">Ranking drzwi 2019</h5>
+                    </div>
+                    <p class="article__text">1 sierpnia 2019 roku wyszedł nowy ranking drzwi. Jakie drzwi są najczęściej wybierane? Jaki jest średni koszt jednej pary drzwi ze standardową ościeżnicą? Czy lepiej kupować w marketach czy salonach drzwi?</p>
+                        <button class="article__button">Czytaj więcej</button>
+                </article>
+            </div>
+        </section>       
+    </main>
+    <footer class= "footer flex-container__footer">
+        <div class = "footer__container">
+            <div class = "logo footer__logo">
+                <img class = "logo__image" src="../images/logo_transparent.png" alt="logo ArtInt">
+            </div>
+            <div class = "contact footer__address">
+                <h4 class = "contact__header">Adres naszego biura</h4>
+                <p class = "contact__text">ArtInt <br>ul. Kozielska 104<br>Łódź<br>93-361</p>
+            </div>
+            <div class = "contact footer__contact">
+                <h4 class = "contact__header">Kontakt</h4>
+                <p class = "contact__text">
+                    biuro@artint.pl<br> 
+                    +45 49 30 205<br>
+                    563 256 146</p>
+            </div>
+            <div class = "contact footer__social-media">
+                <h4 class = "contact__header">Obserwuj nas:</h4>
+                <div class = "footer-icons contact__social-media">
+                    <a class = "footer-icons__link" href="https://www.facebook.com/" target="_blank"><i class="fab footer-icons__image fa-facebook-f"></i></a>
+                    <a class = "footer-icons__link" href="https://www.instagram.com/" target="_blank"><i class="fab footer-icons__image fa-instagram"></i></a>
+                    <a class = "footer-icons__link" href="https://twitter.com/" target="_blank"><i class="fab footer-icons__image fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../detectBrowser.js"></script>
+    <script src="../hamburgerClass.js"></script>
+    <script src="../translation.js"></script>
+    <script src="changeLanguage.js"></script>
+    <script src="../changingImageClass.js"></script>
+    <script src="formClasses.js"></script>
+    <script src="../footerClasses.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+

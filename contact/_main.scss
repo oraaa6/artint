@@ -1,0 +1,159 @@
+.write-to-us {
+    &__header {
+        @include stylesForSectionHeaders();
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__header::after {
+        @include underline
+    }
+}
+
+.form {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 90%;
+    max-width: 600px;
+    &__name, .form__telephone-number, .form__message, .form__agreement-input, .form__email {
+        font-family: $fontFamilyOfDocument;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+    &__name:focus, .form__telephone-number:focus, .form__message:focus, .form__email:focus {
+        outline-style: solid;
+        outline-width: 1px;
+        outline-color: $firstMainColor;
+    
+    }
+    &__name, .form__telephone-number, .form__email {
+        height: 30px;
+    }
+    &__agreement-label {
+        font-size: 12px;
+    }
+    &__agreement-input {
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    &__submit {
+        @include buttonStyles();
+        margin: 10px auto 50px auto;
+        width: 150px;
+    }
+    &__submit:hover {
+        @include buttonStylesHover();
+    }
+    &__sent {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: $fontColor;
+        transition: 0.5s;
+    }
+    &__sent:hover {
+        color: $firstMainColor;
+    }
+    &__rate {
+        width: 200px;
+    }
+    &__rate-title {
+        font-size: 15px;
+    }
+    &__error-write-to-us, &__error-add-comment {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color:rgba(255, 0, 0, 0.8);
+        
+    }
+}
+.location {
+    background-color: $firstMainColor;
+    padding: 30px 15px;
+    &__container {
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+}
+
+.comments {
+    padding: 10px;
+    &__container {
+        margin-bottom: 70px;
+    }
+    &__header {
+        @include stylesForSectionHeaders();
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__header::after {
+        @include underline;
+    }
+}
+.comment {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 11px 24px -7px rgba(190, 194, 197, 0.8);
+    padding: 15px;
+    margin-bottom: 20px;
+    &__image-container {
+        width: 130px;
+        height: 100px;
+        border-right: 1px solid $secondMainColor;
+        margin-right: 25px;
+    }
+    &__image {
+        width: 70%;
+        position: relative;
+        @include alignCenterByTransform();
+    }
+    &__image-and-name-container {
+        justify-self: left;
+        max-width: 600px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__name-container {
+        width: 100%;
+        padding-left: 10px;
+    }
+    &__name {
+        margin-bottom: 10px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    &__time {
+        font-size: 10px; 
+    }
+    &__text-container {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__text, .comment__text--added {
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    &__text--added {
+        word-break: break-all;
+    }
+
+    &__star {
+        margin-top: 5px;
+        &--yellow {
+            color: darkgoldenrod;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .comment {
+        &__image-and-name-container {
+            width: 250px;
+        }
+    }
+}

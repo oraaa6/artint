@@ -1,0 +1,112 @@
+.gallery {
+    max-width: 1280px;
+    margin: 50px auto;
+    &__header {
+        margin-top: 30px;
+        text-align: center;
+        @include stylesForSectionHeaders();
+    }
+    &__header::after {
+        @include underline();
+    }
+    &__item {
+        position: relative;
+        max-height: 200px;
+        max-width: 300px;
+        transform: scale(1);
+        margin: 32px;
+        list-style-type: none;
+        box-shadow: 0px 11px 24px -7px rgba(165, 174, 183, .8);
+        transition: transform .3s;
+        cursor: pointer;
+    }
+    &__item:hover {
+        transform: scale(1.1);
+    }
+    &__text {
+        position: absolute;
+        @include alignXByTransform();
+        bottom: -37px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-family: $fontFamilyOfHeaders;
+        letter-spacing: 1px;
+    }
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s;
+    &__container-image {
+        position: relative;
+        max-width: 1280px;
+    }
+    &--hidden {
+        display: none;
+    }
+    &--fadeOut {
+        animation: fadeOut 0.3s both;
+    }
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &__close, .popup__arrow {
+        border: none;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        cursor: pointer;
+        background-color: transparent;
+        color: $fontColor;
+    }
+    &__close {
+        position: fixed;
+        top: 60px;
+        right: 30px;
+        font-size: 30px;
+        z-index: 5;
+    }
+    &__arrow {
+        position: absolute;
+        @include alignYByTransform();
+        font-size: 10vw;
+    }
+    &__arrow:hover, .popup__close:hover {
+        opacity: 1;
+    }
+    &__arrow--right {
+        right: 60px;
+    }
+    &__arrow--left {
+        left: 60px;
+    }
+}
+
+@media (min-width: 400px) {
+    .popup {
+        &__arrow {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .popup {
+        &__close {
+            right: 300px;
+        }
+    }
+}

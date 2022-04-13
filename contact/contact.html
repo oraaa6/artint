@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Interior Design, Art Design, ArtInt">
+    <meta name = "author" content="Aleksandra Kida">
+    <title>ArtInt Studio</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9946bf0bff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body class = "body flex-container">
+    <div class="body__message body__message--off">STRONA NIEOBSŁUGIWANA PRZEZ IE. PROSZĘ OTWORZYĆ W INNEJ PRZEGLĄDARCE.<br>PAGE NOT SUPPLIED BY IE. PLEASE OPEN IN ANOTHER BROWSER</div>
+    <header class= "header flex-container__header">
+        <nav class = "navigation header__navigation">
+            <div class = "navigation__container">
+                <div class = "logo navigation__logo">
+                    <a class = "logo__link" href="../index.html"><img src="../images/logo_transparent.png" alt="logo ArtInt" class="logo__image"></a>
+                </div>
+                <div class = "menu navigation__menu">
+                    <i class="menu__hamburger fas fa-bars "></i>
+                    <i class="menu__hamburger fas fa-times menu__hamburger--off"></i>
+                    <ul class = "menu__list">
+                        <li class = "menu__item"><a class = "menu__link" href="../index.html">o nas</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="../offers/offers.html">oferta</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="../realizations/realizations.html">realizacje</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="../news/news.html">aktualności</li></a>
+                        <li class = "menu__item"><a class = "menu__link" href="../contact/contact.html">kontakt</li></a>
+                        <li class = "menu__lang">en</li>
+                    </ul>
+                </div>
+                <div class = "navigation-icons navigation__social-media">
+                    <a href="https://www.facebook.com/" target="_blank" class= "navigation-icons__link"><img src="../images/facebook.png" class="navigation-icons__image"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class= "navigation-icons__link"><img src="../images/instagram.png" class="navigation-icons__image"></a>
+                    <a href="contact.html" class= "navigation-icons__link"><img src="../images/envelopes.png" class="navigation-icons__image"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="slider header__image">
+                <img class = "slider__image" src="../images/contactImage2.jpg" alt="woman with phone">
+                <h1 class = "slider__header">Kontakt</h1>
+        </div>
+    </header>
+    <main class= "main flex-container__main">
+       <section class = "write-to-us">
+           <h3 class="write-to-us__header">Napisz do nas</h3>
+          
+           <form class ="form form-write-to-us" id="contactform" action="https://formsubmit.co/example6@onet.pl" method="POST">
+               <div class="form__error-write-to-us"></div>
+               <input type="text" name="name" class="form-write-to-us__input form__name"  placeholder="Imię i nazwisko" maxlength="40">
+               <input name = "tel" placeholder = "tel.: 123-456-789" class = "form-write-to-us__input form__telephone-number">
+               <input type="text" name = "email"class ="form-write-to-us__input form__email" placeholder="E-mail">
+               <textarea cols="30" name = "message"rows="10" class = "form-write-to-us__input form__message" placeholder="Twoja wiadomość"></textarea>
+               <label class = "form-wite-to-us__agreement-label form__agreement-label"><input type="checkbox" name = "agreement" required class = "form-write-to-us__agreement-input form__agreement-input">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu skontaktowania się z firmą ArtInt</label>
+               <input type="hidden" name="_captcha" value="false">
+               <input type="hidden" name="_next" value="https://oraaa6.github.io/artint/contact/thankYou/">
+               <input type="submit" value = "Wyślij" class = "form-write-to-us__submit form__submit"><a href="" class = "form-write-to-us__sent form__sent"></a>
+           </form>
+       </section>
+       <section class = "location">
+           <div class="location__container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.42080074588!2d19.382807315148664!3d51.7619139796777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5635ff85fe7bcf4c!2zNTHCsDQ1JzQyLjkiTiAxOcKwMjMnMDYuMCJF!5e0!3m2!1spl!2spl!4v1646603675550!5m2!1spl!2spl" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+       <section class = "comments">
+           <h3 class="comments__header">Opinie</h3>
+           <div class="comments__container">
+               <article class="comment">
+                   <div class="comment__image-and-name-container">
+                        <div class="comment__image-container">
+                            <img src="../images/user.jpg" alt="user photo" class="comment__image">
+                        </div>
+                            <div class="comment__name-container">
+                                <p class="comment__name"></p>
+                                <p class="comment__time">21-03-22 13:40</p>
+                                <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                                <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                                <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                                <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                                <i class="comment__star comment__star--yellow fi fi-rs-star"></i> 
+                            </div>
+                        </div>
+                   <div class="comment__text-container">
+                        <p class="comment__text">Szybka realzacja projektu oraz przystępne ceny. Pani Architekt wkłada całe swoje serce w tą prace. Prawdziwi pasjonaci. Polecam!</p>
+                   </div>
+               </article>
+               <article class="comment">
+                <div class="comment__image-and-name-container">
+                     <div class="comment__image-container">
+                         <img src="../images/user.jpg" alt="user photo" class="comment__image">
+                     </div>
+                         <div class="comment__name-container">
+                             <p class="comment__name"></p>
+                             <p class="comment__time">01-05-21 22:30</p>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                         </div>
+                     </div>
+                <div class="comment__text-container">
+                     <p class="comment__text">Najlepsze biuro projektowe! Wszystko wykonane w terminie i w dobrych pieniądzach. </p>
+                </div>
+            </article>
+            <article class="comment">
+                <div class="comment__image-and-name-container">
+                     <div class="comment__image-container">
+                         <img src="../images/user.jpg" alt="user photo" class="comment__image">
+                     </div>
+                         <div class="comment__name-container">
+                             <p class="comment__name"></p>
+                             <p class="comment__time">11-08-19 15:12</p>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star comment__star--yellow fi fi-rs-star"></i>
+                             <i class="comment__star fi fi-rs-star"></i>
+                         </div>
+                     </div>
+                <div class="comment__text-container">
+                     <p class="comment__text">Pani architekt przeprowadza przez cały proces projektowania krok po kroku. Doradza, odpowiada na pytania, odbierała każdy mój telefon. Jedynym minusem jest wysoka cena usług.</p>
+                </div>
+            </article>
+           </div>
+           <h3 class="comments__header">Dodaj opinie</h3>
+           <div class="form__error-add-comment"></div>
+           <form class="form form-add-comment">
+            <input type="text" name ="name" class="form__name form-add-comment__input" placeholder="Imię i nazwisko" maxlength="20">
+            <textarea cols="30" name = "comment" rows="10" class = "form__message form-add-comment__input" placeholder="Twoja opinia"></textarea>
+            <div class="form__rate">
+                <p class="form__rate-title">Oceń nas: </p>
+                <div class="form__star-container">
+                    <i class="comment__star rate-star fi fi-rs-star"></i>
+                    <i class="comment__star rate-star fi fi-rs-star"></i>
+                    <i class="comment__star rate-star fi fi-rs-star"></i>
+                    <i class="comment__star rate-star fi fi-rs-star"></i>
+                    <i class="comment__star rate-star fi fi-rs-star"></i>
+                </div>
+            </div>
+            <label class = "form-add-comment__agreement-label form__agreement-label"><input type="checkbox" required class = "form-add-comment__agreement-input form__agreement-input">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu wyrażenia opinii na temat usług udzielanych przez ArtInt</label>
+            <input type="submit" value= "Dodaj" class = "form__submit form-add-comment__submit">
+           </form>
+       </section>
+    </main>
+    <footer class= "footer flex-container__footer">
+        <div class = "footer__container">
+            <div class = "logo footer__logo">
+                <img class = "logo__image" src="../images/logo_transparent.png" alt="logo ArtInt">
+            </div>
+            <div class = "contact footer__address">
+                <h4 class = "contact__header">Adres naszego biura</h4>
+                <p class = "contact__text">ArtInt <br>ul. Kozielska 104<br>Łódź<br>93-361</p>
+            </div>
+            <div class = "contact footer__contact">
+                <h4 class = "contact__header">Kontakt</h4>
+                <p class = "contact__text">
+                    biuro@artint.pl<br> 
+                    +45 49 30 205<br>
+                    563 256 146</p>
+            </div>
+            <div class = "contact footer__social-media">
+                <h4 class = "contact__header">Obserwuj nas:</h4>
+                <div class = "footer-icons contact__social-media">
+                    <a class = "footer-icons__link" href="https://www.facebook.com/" target="_blank"><i class="fab footer-icons__image fa-facebook-f"></i></a>
+                    <a class = "footer-icons__link" href="https://www.instagram.com/" target="_blank"><i class="fab footer-icons__image fa-instagram"></i></a>
+                    <a class = "footer-icons__link" href="https://twitter.com/" target="_blank"><i class="fab footer-icons__image fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../detectBrowser.js"></script>
+    <script src="../hamburgerClass.js"></script>
+    <script src="../translation.js"></script>
+    <script src="changeLanguage.js"></script>
+    <script src="../changingImageClass.js"></script>
+    <script src="mainClasses.js"></script>
+    <script src="../footerClasses.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+

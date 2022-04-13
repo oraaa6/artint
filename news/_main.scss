@@ -1,0 +1,104 @@
+.news {
+    max-width: 1280px;
+    margin: 30px auto;
+    &__header {
+        text-align: center;
+        @include stylesForSectionHeaders();
+    }
+    &__header::after {
+        @include underline();
+    }
+}
+
+.searching {
+   width: 80vw;
+   max-width: 300px;
+   @include stylesForSectionHeaders();
+   line-height: 30px;
+    &__input {
+        width: 100%;
+        height: 30px;
+        margin: 0 0 50px 10px;
+    }
+    &__input:focus {
+        outline-style: solid;
+        outline-width: 1px;
+        outline-color: $firstMainColor;
+    }
+}
+
+.articles {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.article {
+    max-width: 640px;
+    margin-bottom: 70px;
+    padding: 0 15px;
+    &__button {
+        @include buttonStyles();
+    }
+    &__button:hover {
+        @include buttonStylesHover();
+    }
+    &--off {
+        display: none;
+    }
+    
+    &__image-container {
+        margin-bottom: 15px;
+    }
+    &__image {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0px 11px 24px -7px rgba(165, 174, 183, .8);
+    }
+    &__title-container {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    &__title {
+        padding-left: 15px;
+        font-size: 16px;
+        font-family: $fontFamilyOfHeaders;
+        letter-spacing: 1px;
+    }
+    &__date {
+        font-family: $fontFamilyOfHeaders;
+        letter-spacing: 1px;
+        border-right: 1px solid $secondMainColor;
+        padding-right: 10px;
+    }
+    &__date--smaller {
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-bottom: 30px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+    }
+    &__button {
+        width: 120px;
+    }
+}
+
+@media (min-width: 850px) {
+    .article {
+        width: 30%;
+        height: 550px;
+        padding: 0;
+        &__text {
+            display: block;
+            height: 180px;
+            margin-bottom: 0;
+        }
+        &__date {
+            width: 80px;
+        }
+        &__title {
+            padding-left: 20px;
+        }
+    }
+}

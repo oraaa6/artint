@@ -1,0 +1,176 @@
+
+
+// SECTION ABOUT
+
+.section-about {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    &__header {
+        @include stylesForSectionHeaders();
+    }
+    &__header::after {
+        @include underline();
+    }
+    &__description {
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+}
+
+// SECTION TEAM 
+
+.section-our-team {
+    max-width: 790px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    &__header {
+        @include stylesForSectionHeaders();
+    }
+    &__header::after {
+        @include underline();
+    }
+}
+
+.person {
+    padding: 15px;
+    overflow: hidden;
+    &__image-container {
+        width: 100%;
+    }
+    &__image {
+        position: relative;
+        left: -100vw;
+        height: auto;
+        max-width: 100%;
+        transition: 3s;
+    }
+    &__image--show {
+        animation: slidePersons 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    }
+    &__name {
+        @include stylesForSectionHeaders;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;  
+    }
+    &__proffesion {
+        margin-bottom: 10px;
+    }
+    &__duties {
+        line-height: 23px;
+    }
+}
+
+// SECTION MORE INFORMATION
+
+.section-more-info--bgc {
+    background-color: $firstMainColor;
+    padding-bottom: 30px;
+}
+.section-more-info__container-description {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description-about-us {
+    padding: 15px 25px;
+    line-height: 23px;
+    &__header {
+        @include stylesForSectionHeaders();
+    }
+    &__header::after {
+        @include underline();
+    }
+    &__list {
+        margin-top: 20px;
+        text-align: left;
+        line-height: 30px;
+    }
+    &__item {
+        list-style-type: '🏠 ';
+        list-style-position: inside;
+    }
+    &__text {
+        margin-bottom: 15px;
+    }
+    &__image-container {
+        width: 100%;
+    }
+    &__image {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 920px) {
+    .description-about-us {
+        width: 50%;
+        &__list, .description-about-us__text--off {
+            display: none;
+        }
+        &__image-container {
+            width: 50%;
+        }
+    }
+    .section-more-info--bgc {
+        padding-bottom: 0;
+    }
+}
+
+// SECTION WHY IS WORTH
+
+.section-why-is-worth {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    &__header {
+        @include stylesForSectionHeaders();
+    }
+    &__header::after {
+        @include underline();
+    }
+}
+
+.rounded-icons {
+    &__container {
+        position: relative;
+        width: 35vw;
+        height: 35vw;
+        max-width: 130px;
+        max-height: 130px;
+        margin: 0 auto;
+        background-color: rgba(165, 174, 183, .5);
+        box-shadow: 5px 1px 24px -7px rgba(165, 174, 183, 1);
+        border-radius: 50%;
+    }
+    &__image {
+        position: absolute;
+        @include alignCenterByTransform();
+        max-width: 60%;
+        height: auto;
+    }
+    &__header {
+        @include stylesForSectionHeaders();
+        margin-top: 15px;
+    }
+}
+
+// COUNTER SECTION
+
+.counter {
+    text-align: center;
+    &__number {
+        @include stylesForSectionHeaders();
+        margin-bottom: 20px;
+        font-size: 50px; 
+    }
+    &__number::after {
+        @include underline();
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+}
