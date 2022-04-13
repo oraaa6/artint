@@ -54,7 +54,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -703,6 +702,7 @@
 }
 
 .navigation-icons__link {
+  padding-right: 15px;
   display: block;
   text-align: center;
   color: #211d1e;

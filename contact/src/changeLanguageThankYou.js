@@ -35,3 +35,7 @@ class changeLanguage {
         })
     }
 }
+
+// CHANGE LANGUAGE
+const switchLanguage = new changeLanguage();
+switchLanguage.changeLang();

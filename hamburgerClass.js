@@ -33,11 +33,7 @@ var hamburgerNavigation = /*#__PURE__*/function () {
       this.menuList.classList.toggle('menu__list--on');
 
       if (this.menuList.classList.contains('menu__list--on')) {
-        if (navigator.userAgent.match(/firefox|fxios/i)) {
-          this.menuList.style.backgroundColor = "rgba(165, 174, 183, 0.9)";
-        } else {
-          this.menuList.style.backdropFilter = "blur(5px)";
-        }
+        this.menuList.style.backgroundColor = "rgba(165, 174, 183, 0.85)";
       }
     }
   }, {

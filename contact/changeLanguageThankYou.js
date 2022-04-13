@@ -54,4 +54,8 @@ var changeLanguage = /*#__PURE__*/function () {
   }]);
 
   return changeLanguage;
-}();
+}(); // CHANGE LANGUAGE
+
+
+var switchLanguage = new changeLanguage();
+switchLanguage.changeLang();
